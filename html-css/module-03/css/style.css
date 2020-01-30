@@ -86,23 +86,23 @@ a {
   line-height: 24px;
 }
 
-.btn {
+.blog__btn-wrapper {
+  margin-bottom: 70px;
+  text-align-last: center;
+}
+
+.blog__btn {
+  margin-top: -78px;
   padding: 16px 32px;
+  display: inline-block;
   border: 1px solid #626262;
   font-size: 20px;
-  /* background: transparent; */
-  background-color: rgb(150, 44, 44);
+  background: transparent;
   transition: all 0.4s;
   cursor: pointer;
 }
 
-.btn:hover {
+.blog__btn:hover {
   border: 1px solid #03a9f4;
   color: #03a9f4;
-}
-
-.blog__btn {
-  margin: -78px auto 70px;
-  display: block;
-  line-height: 20px;
 }
