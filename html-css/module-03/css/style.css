@@ -1,1 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* 
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  color: #626262;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 930px;
+  padding: 0 15px;
+}
+
+/* ----- header style ----- */
+.header {
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+
+.header__menu {
+  margin: 0 auto;
+  width: 580px;
+}
+
+.menu__link {
+  margin-right: 105px;
+  display: inline-block;
+  line-height: 24px;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.menu__link:last-child {
+  margin-right: 0;
+}
+
+.menu__link .is-active {
+  color: #03a9f4;
+}
+
+.menu__link a {
+  color: #626262;
+  transition: all 0.4s;
+}
+
+.menu__link a:hover {
+  color: #03a9f4;
+}
+
+/* ----- section "blog" style ----- */
