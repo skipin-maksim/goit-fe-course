@@ -52,9 +52,8 @@ a {
 .blog__item {
   margin-right: 56px;
   margin-bottom: 127px;
-  display: inline-block;
-  text-align-last: left;
   width: 420px;
+  display: inline-block;
 }
 
 .blog__item:nth-child(2n) {
