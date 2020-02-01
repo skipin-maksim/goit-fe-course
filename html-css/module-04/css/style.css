@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #555252;
+}
+
+/*  
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+menu text
+color: #0f0101; 
+
+green
+color: #1abc9c;
+
+line 
+color: #323232;
+
+bg item
+color: #e9f0fd;
+
+*/
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  padding: 0 15px;
+}
+
+/* ----- header style ----- */
