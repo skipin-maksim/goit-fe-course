@@ -7,24 +7,177 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Module-04</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:900&display=swap"
-    rel="stylesheet">
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+  <link type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
-  <!-- == header == -->
-  <header class="header">
+  <!-- == header "start"== -->
+  <header>
     <div class="container">
+      <nav class="header-nav clearfix">
 
+        <a class="logo" href="index.html">
+          <h1 class="logo__heading">
+            <span class="logo__accent-color">m</span>art
+          </h1>
+        </a>
+
+        <ul class="header-nav__menu clearfix">
+          <li class="header-nav__menu-link"><a href="#">home</a></li>
+          <li class="header-nav__menu-link"><a href="#">about us</a></li>
+          <li class="header-nav__menu-link"><a href="#">page</a></li>
+          <li class="header-nav__menu-link"><a href="#">shop</a></li>
+          <li class="header-nav__menu-link"><a href="#">blog</a></li>
+          <li class="header-nav__menu-link"><a href="#">contact us</a></li>
+        </ul>
+
+      </nav>
     </div>
   </header>
+  <!-- == header "end"== -->
 
   <!-- == page content "start" == -->
   <main class="main-content">
     <div class="container">
+      <!-- == article 1 "start"== -->
+      <article class="featured-products">
+        <h2 class="featured-products__heading heading-h2">Featured Products</h2>
+
+        <ul class="featured-products__list clearfix">
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_01.png" width="255" height="282"
+                alt="product-blue tshirt">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">blue tshirt</h3>
+              <span class="product-card__price">$26</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_02.png" width="255" height="282"
+                alt="product-woman shirt">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">woman shirt</h3>
+              <span class="product-card__price">$31</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_03.png" width="255" height="282"
+                alt="product-yellow tshirt">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">yellow tshirt</h3>
+              <span class="product-card__price">$21</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_04.png" width="255" height="282"
+                alt="product-coll lingerie">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">coll lingerie</h3>
+              <span class="product-card__price">$56</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_05.png" width="255" height="282"
+                alt="product-blue tshirt">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">blue tshirt</h3>
+              <span class="product-card__price">$26</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_06.png" width="255" height="282"
+                alt="product-woman shirt">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">woman shirt</h3>
+              <span class="product-card__price">$31</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_07.png" width="255" height="282"
+                alt="product-yellow tshirt">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">yellow tshirt</h3>
+              <span class="product-card__price">$21</span>
+            </a>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <img class="product-card__img" src="./img/homework-04_08.png" width="255" height="282"
+                alt="product-coll lingerie">
+            </a>
+            <a class="product-card__line-price clearfix" href="#">
+              <h3 class="product-card__name">coll lingerie</h3>
+              <span class="product-card__price">$56</span>
+            </a>
+          </li>
+
+        </ul>
+      </article>
+      <!-- == article 1 "end"== -->
+
+      <!-- == article 2 "start"== -->
+      <article class="latest-news">
+        <h2 class="latest-news__heading heading-h2">Latest News</h2>
+
+        <ul class="latest-news__list clearfix">
+
+          <li class="latest-news__card">
+            <img class="latest-news__img" src="./img/homework-04_ipad.jpg" alt="new ipad" width="346" height="260">
+            <h3 class="latest-news__title">Lorem ipsum dolor sit amet consecte tur adipisicing.
+            </h3>
+            <p class="latest-news__article">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quibusdam
+              accusantium soluta unde repudiandae magnam, ea deleniti sapiente, quos.</p>
+            <button class="latest-news__btn">Read More</button>
+          </li>
+
+          <li class="latest-news__card">
+            <img class="latest-news__img" src="./img/homework-04_people.jpg" alt="news peple" width="346" height="260">
+            <h3 class="latest-news__title">Lorem ipsum dolor sit amet consecte tur adipisicing.
+            </h3>
+            <p class="latest-news__article">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quibusdam
+              accusantium soluta unde repudiandae magnam, ea deleniti sapiente, quos.</p>
+            <button class="latest-news__btn">Read More</button>
+          </li>
+
+          <li class="latest-news__card">
+            <img class="latest-news__img" src="./img/homework-04_bus.jpg" alt="news bus" width="346" height="260">
+            <h3 class="latest-news__title">Lorem ipsum dolor sit amet consecte tur adipisicing.
+            </h3>
+            <p class="latest-news__article">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quibusdam
+              accusantium soluta unde repudiandae magnam, ea deleniti sapiente, quos.</p>
+            <button class="latest-news__btn">Read More</button>
+          </li>
+
+        </ul>
+
+      </article>
+      <!-- == article 2 "end"== -->
 
     </div>
   </main>
