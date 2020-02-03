@@ -144,7 +144,7 @@ a {
   transition: all 0.3s;
 }
 
-.product-card__name {
+.product-card__name a {
   float: left;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
