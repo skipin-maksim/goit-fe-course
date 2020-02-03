@@ -135,16 +135,16 @@ a {
   width: 255px;
   height: 40px;
   padding-left: 14px;
-  display: block;
   font-weight: 900;
   line-height: 40px;
   letter-spacing: -0.36px;
   text-transform: uppercase;
+  color: #fff;
   background-color: #323232;
   transition: all 0.3s;
 }
 
-.product-card__name {
+.product-card__name a {
   float: left;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
