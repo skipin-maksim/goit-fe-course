@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #515151;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+  padding: 0 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -------------------------- Header Style -------------------------- */
+.header-nav {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  line-height: 32px;
+}
+
+/* logo */
+.logo {
+  float: left;
+  margin: 0;
+}
+
+.logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+.logo__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  letter-spacing: -0.6px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* -------------------------- Navigation -------------------------- */
+.header-nav__menu {
+  float: right;
+}
+
+.header-nav__menu-link {
+  float: left;
+  margin-left: 35px;
+  text-transform: uppercase;
+  font-weight: 900;
+  list-style: none;
+}
+
+.header-nav__menu-link a {
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  color: rgb(15, 1, 1);
+  transition: all 0.3s;
+}
+
+.header-nav__menu-link a:hover {
+  color: #1abc9c;
+}
+
+/* -------------------------- Content Style -------------------------- */
+/* -------------------------- Featured Products -------------------------- */
+.featured-products {
+  padding-bottom: 95px;
+}
+
+.heading-h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+}
+
+.heading-h2::after {
+  content: "";
+  margin: 20px auto 0px;
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: rgb(26, 188, 156);
+}
+
+.featured-products__heading {
+  padding-bottom: 92px;
+}
+
+.product-card {
+  float: left;
+  width: 255px;
+  margin-bottom: 30px;
+  list-style: none;
+  background-color: rgb(233, 240, 253);
+}
+
+.product-card:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.product-card:nth-last-child(-n + 4) {
+  margin-bottom: 0px;
+}
+
+.product-card:hover .product-card__line-price {
+  background-color: rgb(26, 188, 156);
+}
+
+.product-card__img {
+  display: block;
+}
+
+.product-card__line-price {
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  background-color: rgb(50, 50, 50);
+  transition: all 0.3s;
+}
+
+.product-card__name a {
+  float: left;
+  padding-left: 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.product-card__price {
+  float: right;
+  text-align: center;
+  width: 54px;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.44);
+}
+
+/* slider */
