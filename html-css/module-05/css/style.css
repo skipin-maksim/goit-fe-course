@@ -1,9 +1,22 @@
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Open Sans", sans-serif;
+  --main-bg-color: #e9f0fd;
+  --text-color: #515151;
+  --accent-color: #1abc9c;
+  --accent-color-opacity: rgba(26, 188, 156, 0.65);
+  --black-opacity: rgba(0, 0, 2, 0.52);
+  --white-color: #fff;
+  --almost-white: #fefefe;
+  --line-bg: #323232;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  color: #515151;
+  font-family: var(--main-font-family);
+  color: var(--text-color);
 }
 
 a {
@@ -37,11 +50,10 @@ a {
 
 .logo::first-letter {
   font-weight: 900;
-  color: #1abc9c;
+  color: var(--accent-color);
 }
 
 .logo__heading {
-  font-family: "Roboto", sans-serif;
   font-size: 30px;
   letter-spacing: -0.6px;
   font-weight: 300;
@@ -62,6 +74,7 @@ a {
 }
 
 .header-nav__menu-link a {
+  font-family: var(--secondary-font-family);
   font-size: 14px;
   letter-spacing: -0.28px;
   color: #0f0101;
@@ -69,7 +82,7 @@ a {
 }
 
 .header-nav__menu-link a:hover {
-  color: #1abc9c;
+  color: var(--accent-color);
 }
 
 /* -------------------------- Content Style -------------------------- */
@@ -82,7 +95,7 @@ a {
 /*----- wrapper img = cover -----*/
 .img_object-wrapper {
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 
 .slider-img {
@@ -94,8 +107,8 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
-  background-color: rgba(0, 0, 2, 0.52);
+  height: 100%;
+  background-color: var(--black-opacity);
 }
 
 .slider__section {
@@ -113,7 +126,7 @@ a {
   width: 104px;
   height: 104px;
   border: none;
-  background-color: rgba(26, 188, 156, 0.65);
+  background-color: var(--accent-color-opacity);
   transition: all 0.4s;
   cursor: pointer;
 }
@@ -148,7 +161,7 @@ a {
 
 .btn-left:hover,
 .btn-right:hover {
-  background-color: rgb(26, 188, 156);
+  background-color: var(--accent-color);
   opacity: 1;
 }
 
@@ -165,32 +178,29 @@ a {
 }
 
 .slider__title {
-  font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 900;
   line-height: 82px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .subtitle {
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 54px;
   text-align: left;
-  color: #fff;
+  color: var(--white-color);
 }
 
 /* -------------------------- New Collection -------------------------- */
 .new-collection {
   padding-top: 95px;
   padding-bottom: 100px;
-  background-color: #e9f0fd;
+  background-color: var(--main-bg-color);
 }
 
 .heading-h2 {
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 48px;
   letter-spacing: -0.96px;
@@ -203,7 +213,7 @@ a {
   display: block;
   width: 164px;
   height: 7px;
-  background-color: #1abc9c;
+  background-color: var(--accent-color);
 }
 
 .new-collection__heading {
@@ -213,7 +223,6 @@ a {
 .product-card {
   float: left;
   width: 255px;
-  margin-bottom: 30px;
   list-style: none;
   overflow: hidden;
 }
@@ -222,19 +231,15 @@ a {
   margin-right: 30px;
 }
 
-.product-card:nth-last-child(-n + 4) {
-  margin-bottom: 0px;
-}
-
 .product-card:hover .product-card__line-price {
-  background-color: #1abc9c;
+  background-color: var(--accent-color);
 }
 
 .product-card__img-link {
   position: relative;
-  display: block;
   width: 255px;
   height: 282px;
+  display: block;
 }
 
 .product-card__img {
@@ -246,14 +251,13 @@ a {
   line-height: 40px;
   letter-spacing: -0.36px;
   text-transform: uppercase;
-  background-color: #323232;
+  background-color: var(--line-bg);
   transition: all 0.3s;
 }
 
 .product-card__name a {
   float: left;
   padding-left: 14px;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #fff;
 }
@@ -263,7 +267,6 @@ a {
   text-align: center;
   width: 54px;
   height: 40px;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.44);
@@ -301,8 +304,8 @@ a {
 }
 
 .btn:hover {
-  background-color: #1abc9c;
-  border: 1px solid #1abc9c;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .overlay-btn {
@@ -342,9 +345,11 @@ a {
 }
 
 .overlay-btn-bottom-row {
+  float: none;
   position: relative;
   width: 100%;
   padding: 0 17px;
+  font-family: var(--secondary-font-family);
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -369,12 +374,12 @@ a {
 
 /* ------- footer ------- */
 .footer {
-  
-  background-color: #323232;
+  background-color: var(--line-bg);
 }
 
 .footer p {
   padding: 31px 0;
+  font-family: var(--secondary-font-family);
   font-size: 16px;
   letter-spacing: -0.02em;
   text-align: center;
