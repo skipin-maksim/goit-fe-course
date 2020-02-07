@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Module-04</title>
+  <title>Module-05</title>
 
   <link type="text/css"
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
@@ -13,6 +13,7 @@
   <link type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,900&display=swap&subset=cyrillic"
     rel="stylesheet">
 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -47,12 +48,22 @@
     <section class="main-slider">
       <div class="slider">
 
-        <img class="slider-img" src="./img/slider-01.jpg" alt="slider-img" width="1648" height="auto">
+        <img class="slider-img img_object-wrapper" src="./img/slider-01.jpg" alt="slider-img" width="1648" height="602">
+        <div class="slider-img__overlay"></div>
 
-        <div class="slider__text">
-          <h2 class="slider__title">Affordable Paris Tours</h2>
-          <p class="subtitle">city tours / tour tickets / tour guides</p>
+        <div class="slider__section container clearfix">
+          <button class="slider__btn btn-left"></button>
+
+          <div class="slider__title-block">
+            <h2 class="slider__title">Affordable Paris Tours</h2>
+            <p class="subtitle">city tours / tour tickets / tour guides</p>
+          </div>
+
+          <button class="slider__btn btn-right"></button>
         </div>
+
+
+
       </div>
     </section>
 
@@ -62,28 +73,115 @@
 
     <!-- == section 1 "end"== -->
 
-    <section class="featured-products">
-      <h2 class="featured-products__heading heading-h2">Featured Products</h2>
+    <section class="new-collection">
+      <div class="container">
+        <h2 class="new-collection__heading heading-h2">New Collection</h2>
 
-      <ul class="featured-products__list clearfix">
+        <ul class="new-collection__list clearfix">
 
-        <li class="product-card">
-          <a class="product-card__img-link" href="#">
-            <img class="product-card__img" src="./img/homework-04_01.png" width="255" height="282"
-              alt="product-blue tshirt">
-          </a>
-          <div class="product-card__line-price clearfix">
-            <h3 class="product-card__name"><a href="#">blue tshirt</a></h3>
-            <span class="product-card__price">$26</span>
-          </div>
-        </li>
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
 
-      </ul>
+              <div class="product-card__overlay">
+                <div class="overlay-btn-rows">
+                  <div class="overlay-btn-top-row">
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                  </div>
+                  <button class="overlay-btn-bottom-row btn">add to card</button>
+                </div>
+              </div>
+
+              <img class="product-card__img" src="./img/man-01.jpg" width="255" height="282" alt="product-blue tshirt">
+            </a>
+
+            <div class="product-card__line-price clearfix">
+              <h3 class="product-card__name"><a href="#">blue tshirt</a></h3>
+              <span class="product-card__price">$26</span>
+            </div>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <div class="product-card__overlay">
+                <div class="overlay-btn-rows">
+                  <div class="overlay-btn-top-row">
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                  </div>
+                  <button class="overlay-btn-bottom-row btn">add to card</button>
+                </div>
+              </div>
+
+              <img class="product-card__img" src="./img/woman-01.jpg" width="255" height="282"
+                alt="product-blue tshirt">
+            </a>
+            <div class="product-card__line-price clearfix">
+              <h3 class="product-card__name"><a href="#">woman shirt</a></h3>
+              <span class="product-card__price">$31</span>
+            </div>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <div class="product-card__overlay">
+                <div class="overlay-btn-rows">
+                  <div class="overlay-btn-top-row">
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                  </div>
+                  <button class="overlay-btn-bottom-row btn">add to card</button>
+                </div>
+              </div>
+
+              <img class="product-card__img" src="./img/man-02.jpg" width="255" height="282" alt="product-blue tshirt">
+            </a>
+            <div class="product-card__line-price clearfix">
+              <h3 class="product-card__name"><a href="#">yellow tshirt</a></h3>
+              <span class="product-card__price">$21</span>
+            </div>
+          </li>
+
+          <li class="product-card">
+            <a class="product-card__img-link" href="#">
+              <div class="product-card__overlay">
+                <div class="overlay-btn-rows">
+                  <div class="overlay-btn-top-row">
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                    <button class="overlay-btn btn"></button>
+                  </div>
+                  <button class="overlay-btn-bottom-row btn">add to card</button>
+                </div>
+              </div>
+
+              <img class="product-card__img" src="./img/woman-02.jpg" width="255" height="282"
+                alt="product-blue tshirt">
+            </a>
+            <div class="product-card__line-price clearfix">
+              <h3 class="product-card__name"><a href="#">cool lingerie</a></h3>
+              <span class="product-card__price">$56</span>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
     </section>
 
-    </div>
   </main>
   <!-- == page content "end" == -->
+
+  <!-- == footer "start" == -->
+  <footer class="footer">
+    <div class="container">
+      <p>All Rights Reserved © Dokan | Designed <span>ThemenGraph</span></p>
+    </div>
+  </footer>
+  <!-- == footer "end" == -->
 
   <script src="./js/script.js"></script>
 </body>
