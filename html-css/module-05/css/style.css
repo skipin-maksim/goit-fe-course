@@ -76,26 +76,24 @@ a {
 /*----------------- slider -----------------*/
 .slider {
   position: relative;
-  height: 600px;
 }
 
 /*----- wrapper img = cover -----*/
-.img_object-wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.slider-img {
-  object-fit: cover;
-}
-
-.slider-img__overlay {
+.slider__overlay-img::after {
+  content: "";
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 2, 0.52);
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .slider__section {
@@ -224,8 +222,6 @@ a {
 
 .product-card__img-link {
   position: relative;
-  width: 255px;
-  height: 282px;
   display: block;
 }
 
@@ -261,22 +257,23 @@ a {
 
 .product-card__overlay {
   position: absolute;
-  top: -132px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 235px;
-  height: 261px;
+  top: -290px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 10px solid transparent;
+  padding: 10px;
+  background-clip: padding-box;
   background-color: rgba(0, 0, 2, 0.52);
   transition: all 0.5s;
 }
 
 .overlay-btn-rows {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 166px;
-  height: 107px;
 }
 
 .btn {
@@ -356,7 +353,7 @@ a {
 }
 
 .product-card:hover .product-card__overlay {
-  top: 50%;
+  top: 0;
 }
 
 /* ------- footer ------- */
@@ -373,6 +370,6 @@ a {
   color: #fefefe;
 }
 
-.footer span {
+.footer a {
   color: #46bfa9;
 }
