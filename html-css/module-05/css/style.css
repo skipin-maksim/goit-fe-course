@@ -153,13 +153,12 @@ a {
 /*---------- text style ----------*/
 .slider__title-block {
   position: absolute;
-  width: 757px;
+  width: 760px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
   letter-spacing: -0.02em;
-  text-align: center;
 }
 
 .slider__title {
