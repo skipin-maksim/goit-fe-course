@@ -379,7 +379,7 @@ input[type="radio"].visually-hidden {
   color: var(--after-line);
 }
 
-.page-footer__form {
+.form-one-block {
   display: flex;
 }
 
