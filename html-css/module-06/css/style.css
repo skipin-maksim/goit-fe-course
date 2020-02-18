@@ -84,7 +84,7 @@ input[type="radio"].visually-hidden {
   font-size: 30px;
   font-weight: 700;
   color: var(--like-menu);
-  transition: color 0.2s linear;
+  transition: color .2s linear;
 }
 
 .header-nav {
@@ -103,7 +103,7 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--like-menu);
-  transition: all 0.2s linear;
+  transition: color .2s linear;
 }
 
 .nav-link::after {
@@ -114,7 +114,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   height: 3px;
   background-color: transparent;
-  transition: background-color 0.2s linear;
+  transition: background-color .2s linear;
 }
 
 .heading-h1 a:focus,
@@ -267,14 +267,18 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.member-card__background-under-the-photo {
-  background-color: var(--like-menu);
+.member-card__overlay {
+  position: relative;
+  transition-property: transform, box-shadow ;
+  transition-duration: .2s;
+  transition-timing-function: linear;
 }
 
-.member-card__overlay-wrapper {
-  position: relative;
-  transition: transform 0.2s linear;
+.member-card__overlay:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0 var(--like-menu);
 }
+
 
 .member-card__social-block {
   position: absolute;
@@ -282,7 +286,11 @@ input[type="radio"].visually-hidden {
   height: 100%;
   background-image: var(--gradient-overlay);
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: opacity .2s linear;
+}
+
+.member-card__overlay:hover .member-card__social-block {
+  opacity: 1;
 }
 
 .social-list {
@@ -304,7 +312,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--bg-icon);
-  transition: background-color 0.2s linear;
+  transition: background-color .2s linear;
 }
 
 .facebook {
@@ -327,14 +335,6 @@ input[type="radio"].visually-hidden {
   background-color: var(--like-menu);
 }
 /* --- social icons style end --- */
-
-.member-card__overlay-wrapper:hover {
-  transform: translate(-10px, -10px);
-}
-
-.member-card__overlay-wrapper:hover .member-card__social-block {
-  opacity: 1;
-}
 
 .member-card__employee-name {
   margin: 28px 0 8px;
@@ -409,6 +409,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid var(--like-menu);
   color: var(--col-white);
   background-color: var(--like-menu);
+  cursor: pointer;
 }
 
 /*----------------------- footer end -----------------------*/
