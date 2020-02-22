@@ -5,28 +5,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Module-06</title>
+  <title>Module-07</title>
 
   <link rel="stylesheet" type="text/css" href="./css/normalize.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
+
   <!-- == header "start"== -->
-  <header class="page-header">
-    
-  </header>
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-header__heading">
+        <a class="link-h1" href="./index.html">Golden</a>
+      </h1>
+      <nav class="nav-top">
+        <ul class="nav-top__list">
+          <li class="nav-top__item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-top__item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-top__item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-top__item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-top__item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
   <!-- == header "end"== -->
 
   <!-- == page content "start" == -->
   <main class="page-main">
-    
+
+    <section class="top-section">
+      <div class="container">
+
+        <h2 class="top-section__heading-h2 heading-h2">Services</h2>
+        <p class="heading-h2-subtext">Proin iaculis purus consequat sem cure.</p>
+
+        <div class="top-section__services">
+          <ul class="services-list">
+
+            <li class="services-list__item">
+              <h3 class="services-item__heading-h3 heading-h3">E-Commerce</h3>
+              <p class="services-item__description">Lorem Ipsum has been the industry's standard dummy text ever since
+                the 1500s, five centuries when an.</p>
+            </li>
+
+            <li class="services-list__item">
+              <h3 class="services-item__heading-h3 heading-h3">Responsive Web</h3>
+              <p class="services-item__description">It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining.</p>
+            </li>
+
+            <li class="services-list__item">
+              <h3 class="services-item__heading-h3 heading-h3">Web Security</h3>
+              <p class="services-item__description">There are many variations of passages of Lorem Ipsum available, but
+                the majority have suffered many variations.</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </main>
   <!-- == page content "end" == -->
 
   <!-- == footer "start" == -->
   <footer class="page-footer">
-    
+    <div class="container">
+
+      <h2 class="footer-heading-h2 heading-h2">Contact us</h2>
+      <p class="heading-h2-subtext">Proin iaculis purus consequat sem cure.</p>
+
+      <form class="footer-form" action="#" method="GET">
+        <div class="footer-form__input-fields">
+
+          <ul class="footer-form-list">
+            <li class="footer-form__item">
+              <input class="footer-input form-item--size" type="text" name="user_name" id="id-user_name"
+                placeholder="Your name *" required>
+            </li>
+
+            <li class="footer-form__item">
+              <input class="footer-input form-item--size" type="email" name="user_email" id="id-user_email"
+                placeholder="Your e-mail *" required>
+            </li>
+
+            <li class="footer-form__item">
+              <input class="footer-input form-item--size user-subject" type="text" name="user_subject"
+                id="id-user_subject" placeholder="Subject">
+            </li>
+          </ul>
+
+          <textarea class="footer-form__user-massage form-item--size user-massage" name="user_massage"
+            id="id-user_massage" placeholder="Your message *" required></textarea>
+        </div>
+
+        <button class="footer-form__btn">Send message</button>
+
+      </form>
+    </div>
   </footer>
   <!-- == footer "end" == -->
 

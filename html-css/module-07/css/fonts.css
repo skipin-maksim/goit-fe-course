@@ -1,20 +1,33 @@
-/* montserrat-regular - cyrillic_latin */
+/* montserrat-regular - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-       url('../fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* montserrat-700 - cyrillic_latin */
+
+/* montserrat-600 - latin_cyrillic */
 @font-face {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"),
+    url("../fonts/montserrat-v14-latin_cyrillic-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-       url('../fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin_cyrillic-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin_cyrillic-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-slab-regular - cyrillic_latin */
@@ -22,26 +35,26 @@
   font-family: "Roboto Slab", sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/roboto-slab-v11-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-slab-v11-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""),
+    url("../fonts/roboto-slab-v11-cyrillic_latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-cyrillic_latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* Wisdom Script-regular - latin */
 @font-face {
   font-family: "Wisdom Script", fantasy;
-  src: url('../fonts/Wisdom-Script.woff2') format('woff2'),
-       url('../fonts/Wisdom-Script.woff') format('woff');
+  src: url("../fonts/Wisdom-Script.woff2") format("woff2"),
+    url("../fonts/Wisdom-Script.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Droid Serif - italic - latin */
 @font-face {
-    font-family: "Droid Serif", serif;
-    src: url('../fonts/DroidSerif-Italic.woff2') format('woff2'),
-         url('../fonts/DroidSerif-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Droid Serif", serif;
+  src: url("../fonts/DroidSerif-Italic.woff2") format("woff2"),
+    url("../fonts/DroidSerif-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
-
