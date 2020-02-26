@@ -206,7 +206,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-form-list {
-  min-width: 458px;
+  width: calc(50% - 15px);
 }
 
 .footer-form__input-fields {
@@ -256,7 +256,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-form__user-massage {
-  min-width: 458px;
+  width: calc(50% - 15px);
   height: auto;
   resize: none;
   outline-color: var(--color-accent);
