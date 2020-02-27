@@ -1,0 +1,90 @@
+/* import Google fonts */
+@import url("./fonts.css");
+/* import Google fonts end */
+
+/*--------------- variables ---------------*/
+:root {
+  --font-f_first: "Montserrat", sans-serif;
+  --font-f_second: 'Roboto', sans-serif;
+  --color-white: #fff;
+  --color-text-dark: #333;
+  --color-text-normal: #666;
+  --color-icin&btb: #ff4e50;
+  --color-icon-1: #ffa507;
+  --color-icon-2: #1cd7ad;
+  --color-icon-3: #4e73db;
+
+}
+/*--------------- variables end ---------------*/
+
+/*-------------- reset settings --------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*-------------- reset settings end --------------*/
+
+/*-------------- something in general --------------*/
+body {
+  font-family: var(--font-f_first);
+  font-weight: 700;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 17px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*-------------- something in general end --------------*/
+
+/*----------------------- header -----------------------*/
+
+
+
+
+
+
+/*----------------------- header end -----------------------*/
+
+/*----------------------- footer -----------------------*/
+
+
+
+
+
+
+
+
+/*----------------------- footer end -----------------------*/
+
