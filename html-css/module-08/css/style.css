@@ -68,23 +68,53 @@ input[type="radio"].visually-hidden {
 
 /*-------------- something in general end --------------*/
 
-/*----------------------- header -----------------------*/
+/*----------------------- HEADER -----------------------*/
+.page-header {
+}
+.container {
+}
+.authentication_name-site_wrapper {
+}
+.authentication {
+}
+.btn-log-in {
+}
+.btn-all {
+}
+.btn-sign-up {
+}
+.btn-first-type {
+}
+.title-site {
+}
+/*----------------------- HEADER end -----------------------*/
 
-
-
-
-
-
-/*----------------------- header end -----------------------*/
-
-/*----------------------- footer -----------------------*/
-
-
-
-
-
-
-
-
-/*----------------------- footer end -----------------------*/
+/*----------------------- MAIN -----------------------*/
+.title-block {
+}
+.title-block__title-h2 {
+}
+.title-block__sub-title {
+}
+.title-block__btn {
+}
+.page-main {
+}
+.partners {
+}
+.partners__title-h2 {
+}
+.partners__list {
+}
+.partners__item {
+}
+.partner-photo {
+}
+.partner-name {
+}
+.partner-name__link {
+}
+.partner-info {
+}
+/*----------------------- MAIN end -----------------------*/
 
