@@ -91,14 +91,4 @@
   .container {
     width: 94rem;
   }
-
-  .partners__item:first-child,
-  .partners__item:nth-child(5n) {
-    padding-left: 0;
-  }
-
-  
-  .partners__item:nth-child(4n) {
-    padding-right: 0;
-  }
 }
