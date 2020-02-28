@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .container {
-    min-width: 66rem;
+    width: 66rem;
     padding: 0;
   }
 
@@ -44,7 +44,7 @@
   }
 
   .partners__title-h2 {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
   }
 
   .partners__list {
@@ -72,12 +72,33 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 960px) {
+@media (min-width: 768px) and (max-width: 959px) {
   .partners__list {
     padding: 0 7rem;
   }
 
-  .partners__item:not(:nth-child(2n)) {
+  .partners__item {
     margin-bottom: 4rem;
+  }
+
+  .partners__item:nth-child(2),
+  .partners__item:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: 94rem;
+  }
+
+  .partners__item:first-child,
+  .partners__item:nth-child(5n) {
+    padding-left: 0;
+  }
+
+  
+  .partners__item:nth-child(4n) {
+    padding-right: 0;
   }
 }
