@@ -1,6 +1,5 @@
-/* import Google fonts */
+/* import fonts */
 @import url("./fonts.css");
-/* import Google fonts end */
 
 /*--------------- variables ---------------*/
 :root {
@@ -51,8 +50,8 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 320px;
   padding: 0 14px;
+  width: 32rem;
 }
 
 .ligth-text {
@@ -94,18 +93,19 @@ input[type="radio"].visually-hidden {
 /*-------------- something in general end --------------*/
 
 /*----------------------- HEADER -----------------------*/
-.page-header {
+.section-header {
+  padding: 2rem 0;
   min-height: 54rem;
   text-align: center;
   background-image: url(../img/bg_top.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
   background-size: cover;
   color: var(--color-white);
 }
 
-.authentication_name-site_wrapper {
-  padding: 2rem 0;
+.header {
+  margin-bottom: 2.7rem;
 }
 
 .authentication .btn-all {
@@ -118,7 +118,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title-site {
-  margin: 11.5rem 0 2.8rem;
+  margin: 11.5rem 0 0;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -130,7 +130,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title-block__sub-title {
-  margin: 0.9rem auto 1.2rem;
+  margin: 0.9rem auto 1.5rem;
   max-width: 22.4rem;
   font-size: 1.8rem;
 }
@@ -147,9 +147,6 @@ input[type="radio"].visually-hidden {
   font-size: 2.2rem;
 }
 
-.partners__list {
-}
-
 .partners__item {
   position: relative;
   margin: 0 auto;
@@ -164,8 +161,8 @@ input[type="radio"].visually-hidden {
 
 .partner-icon {
   position: absolute;
-  top: 8.5rem;
-  right: 4rem;
+  top: 10rem;
+  right: 6rem;
   width: 4rem;
   height: 4rem;
   display: block;
