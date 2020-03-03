@@ -165,6 +165,7 @@ input[type="radio"].visually-hidden {
 }
 
 .title-block__btn {
+  padding: 0.95rem;
   transition: all 0.2s linear;
 }
 
