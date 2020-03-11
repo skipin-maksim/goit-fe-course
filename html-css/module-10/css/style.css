@@ -1,0 +1,83 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap&subset=cyrillic,cyrillic-ext");
+
+/*--------------- variables ---------------*/
+:root {
+  --font-f_first: "Montserrat", sans-serif;
+  --font-f_second: "Roboto", sans-serif;
+  --font-f_third: "Kaushan Script", cursive;
+  --col-white: #fff;
+  --text-light: #ccc;
+  --text-normal: #999;
+  --text-darker: #333;
+  --border: #e7e7e7;
+  --like-menu: #95e1d3;
+  --after-line: #f38181;
+  --bg-icon: #fce38a;
+  --gradient-overlay: linear-gradient(
+    rgb(243, 129, 129, 0.9) 0%,
+    rgb(252, 227, 138, 0.9) 100%
+  );
+}
+/*--------------- variables end ---------------*/
+
+/*-------------- reset settings --------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*-------------- reset settings end --------------*/
+
+/*-------------- something in general --------------*/
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: var(--font-f_first);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*-------------- something in general end --------------*/
+
+/*----------------------- HEADER -----------------------*/
+
+/*----------------------- HEADER end -----------------------*/
+
+/*----------------------- MAIN -----------------------*/
+
+/*----------------------- MAIN end -----------------------*/
