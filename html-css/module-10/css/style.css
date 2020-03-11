@@ -1,5 +1,5 @@
 /* import fonts */
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,500,700|Roboto:300i,400&display=swap&subset=cyrillic,cyrillic-ext");
 
 /*--------------- variables ---------------*/
 :root {
@@ -33,21 +33,12 @@
 /*-------------- reset settings end --------------*/
 
 /*-------------- something in general --------------*/
-html {
-  font-size: 10px;
-}
-
 body {
   font-family: var(--font-f_first);
-  font-weight: 700;
+  font-weight: 500;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--color-white);
+.link {
   text-decoration: none;
 }
 
@@ -75,6 +66,26 @@ input[type="radio"].visually-hidden {
 /*-------------- something in general end --------------*/
 
 /*----------------------- HEADER -----------------------*/
+
+.navigation__item {
+
+}
+
+.navigation__link {
+  transition: all .2s linear;
+}
+
+.navigation__icon {
+  width: 18px;
+  max-height: 18px;
+  transition: all .2s linear;
+}
+
+.navigation__link:hover,
+.navigation__icon:hover {
+  fill: var(--bg-icon);
+  color: var(--bg-icon);
+}
 
 /*----------------------- HEADER end -----------------------*/
 
