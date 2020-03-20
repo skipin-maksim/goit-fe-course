@@ -15,7 +15,6 @@
     text-transform: uppercase;
     color: map-get($color, color_white);
     transition: all .2s linear;
-    outline: none;
     
     &::after {
         @include pseudo();
@@ -39,7 +38,7 @@
     }
 
     &--icon {
-        outline: none;
+       @extend %link;
     }
 
     &--icon:focus .navigation__icon,
@@ -54,5 +53,4 @@
     height: 20px;
     fill: map-get($color, color_white);
     transition: all .2s linear;
-    outline: none;
 }
