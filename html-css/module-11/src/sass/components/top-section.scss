@@ -1,0 +1,5 @@
+.top-section {
+  min-height: 100vh;
+  padding: 25px 0;
+  @include gradient-bg-img($path: '../../images/bg-top.jpg');
+}

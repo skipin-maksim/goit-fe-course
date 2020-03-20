@@ -6,5 +6,16 @@
 @import './fonts.scss';
 @import './helpers/variables.scss';
 @import './helpers/hidding.scss';
-@import './components/container.scss';
+@import './helpers/placeholder.scss';
+@import './helpers/mixin.scss';
 @import './base.scss';
+
+@import './components/container.scss';
+@import './components/top-section.scss';
+@import './components/page-header.scss';
+@import './components/navigation.scss';
+@import './components/top-title-block.scss';
+
+
+
+
