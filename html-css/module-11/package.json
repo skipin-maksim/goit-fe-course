@@ -9,12 +9,13 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://skipin-maksim.github.io/goit-fe-course/html-css/module-11/build/",
+  "homepage": "https://skipin-maksim.github.io/goit-fe-course",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skipin-maksim/goit-fe-course/git"
+    "url": "git+https://github.com/luxplanjay/gulp-starter-kit.git"
+    
   },
-  "author": "Skipin Maksim <skipysmaks@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/luxplanjay/gulp-starter-kit/issues"
