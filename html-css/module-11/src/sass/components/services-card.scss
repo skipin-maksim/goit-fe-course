@@ -23,27 +23,27 @@
   }
 
   &--photography::after {
-    @include bg-img($path: "../../images/icons/icon-color/icon-alarm.svg", $size: contain);
+    @include bg-img($path: "../images/icons/icon-color/icon-alarm.svg", $size: contain);
   }
 
   &--web-design::after {
-    @include bg-img($path: "../../images/icons/icon-color/icon-line_graph.svg", $size: contain);
+    @include bg-img($path: "../images/icons/icon-color/icon-line_graph.svg", $size: contain);
   }
 
   &--creativity::after {
-    @include bg-img($path: "../../images/icons/icon-color/icon-pc.svg", $size: contain);
+    @include bg-img($path: "../images/icons/icon-color/icon-pc.svg", $size: contain);
   }
 
   &--seo::after {
-    @include bg-img($path: "../../images/icons/icon-color/icon-book.svg", $size: contain);
+    @include bg-img($path: "../images/icons/icon-color/icon-book.svg", $size: contain);
   }
 
   &--css-html::after {
-    @include bg-img($path: "../../images/icons/icon-color/icon-home.svg", $size: contain);
+    @include bg-img($path: "../images/icons/icon-color/icon-home.svg", $size: contain);
   }
 
   &--digital::after {
-    @include bg-img($path: "../../images/icons/icon-color/icon-img.svg", $size: contain);
+    @include bg-img($path: "../images/icons/icon-color/icon-img.svg", $size: contain);
   }
 }
 
