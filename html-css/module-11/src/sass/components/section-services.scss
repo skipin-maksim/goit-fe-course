@@ -3,27 +3,14 @@
 }
 
 .services__title {
-  margin: 0 auto 45px;
-  min-width: 400px;
-  max-width: 960px;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
+  @extend %title-style;
 
   &::after {
     @include pseudo;
-    margin: 38px auto 0;
-    width: 60px;
-    height: 3px;
-    background-color: map-get($color, after_line);
+    @extend %title-line;
   }
 }
 
 .services__sub-title {
-    margin-bottom: 15px;
-    display: block;
-    font-family: $font-third;
-    font-size: 24px;
-    text-transform: initial;
+  @extend %title-sub;
 }

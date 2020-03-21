@@ -1,14 +1,51 @@
 %link {
-    display: inline-block;
-    text-decoration: none;
-    outline: none;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
 }
 
 %list-item {
-    list-style: none;
+  list-style: none;
 }
 
 %section-padding {
-    padding-top: 45px;
-    padding-bottom: 10px;
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
+
+%light-text {
+  font-family: $font-second;
+  font-size: 15px;
+  line-height: 24px;
+  color: map-get($color, text_normal);
+}
+
+%mid-title-style {
+  font-size: $font-size-default;
+  text-transform: uppercase;
+}
+
+%title-style {
+  margin: 0 auto 45px;
+  min-width: 400px;
+  max-width: 960px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%title-sub {
+  margin-bottom: 15px;
+  display: block;
+  font-family: $font-third;
+  font-size: 24px;
+  text-transform: initial;
+}
+
+%title-line {
+  margin: 38px auto 0;
+  width: 60px;
+  height: 3px;
+  background-color: map-get($color, after_line);
 }

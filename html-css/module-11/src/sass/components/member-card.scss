@@ -1,0 +1,78 @@
+.member-card {
+  @extend %list-item;
+  position: relative;
+  width: 380px;
+  text-align: center;
+
+  &__overlay {
+    position: relative;
+    transition: all 0.2s linear;
+
+    &:hover {
+      transform: translate(-10px, -10px);
+      box-shadow: 10px 10px 0 map-get($color, like_menu);
+    }
+
+    &:hover .member-card__social-list {
+      opacity: 1;
+    }
+  }
+
+  &__social-list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include content-center-flex($type: 'all');
+    background: map-get($color, gradient_overlay);
+    opacity: 0;
+    transition: all 0.2s linear;
+  }
+}
+
+.social-list {
+  &__item {
+    @extend %list-item;
+
+    &:not(:last-child) {
+      margin-right: 1px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: map-get($color, bg_icon);
+    transition: all 0.2s linear;
+    
+    &:hover {
+      background-color: map-get($color, after_line);
+    }
+
+    &:hover .social-list__icon {
+      fill: map-get($color, color_white);
+    }
+  }
+
+  &__icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    fill: map-get($color, after_line);
+    transition: all 0.2s linear;
+  }
+}
+
+.member-card__member-name {
+  @extend %mid-title-style;
+  margin: 28px 0 10px;
+}
+
+
+.mamber-card__employee-position {
+  @extend %light-text;
+  font-weight: 300;
+  font-style: italic;
+}
