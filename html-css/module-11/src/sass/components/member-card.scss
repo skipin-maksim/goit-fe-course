@@ -5,8 +5,8 @@
   text-align: center;
 
   &__overlay {
+    @include transition;
     position: relative;
-    transition: all 0.2s linear;
 
     &:hover {
       transform: translate(-10px, -10px);
@@ -19,13 +19,13 @@
   }
 
   &__social-list {
+    @include transition;
+    @include content-center-flex($type: 'all');
     position: absolute;
     width: 100%;
     height: 100%;
-    @include content-center-flex($type: 'all');
     background: map-get($color, gradient_overlay);
     opacity: 0;
-    transition: all 0.2s linear;
   }
 }
 
@@ -39,11 +39,11 @@
   }
 
   &__link {
+    @include transition;
     display: block;
     width: 56px;
     height: 56px;
     background-color: map-get($color, bg_icon);
-    transition: all 0.2s linear;
     
     &:hover {
       background-color: map-get($color, after_line);
@@ -55,13 +55,13 @@
   }
 
   &__icon {
+    @include transition;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     width: 26px;
     height: 26px;
     fill: map-get($color, after_line);
-    transition: all 0.2s linear;
   }
 }
 
@@ -73,6 +73,5 @@
 
 .mamber-card__employee-position {
   @extend %light-text;
-  font-weight: 300;
-  font-style: italic;
+  @extend %light-text-ital;
 }

@@ -20,6 +20,11 @@
   color: map-get($color, text_normal);
 }
 
+%light-text-ital {
+  font-weight: 300;
+  font-style: italic;
+}
+
 %mid-title-style {
   font-size: $font-size-default;
   text-transform: uppercase;

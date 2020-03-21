@@ -8,10 +8,10 @@
 
 .page-header__logo-link {
     @extend %link;
+    @include transition;
     font-size: 30px;
     font-weight: 700;
     color: map-get($color, color_white);
-    transition: all .2s linear;
     
     &:hover,
     &:focus {
