@@ -1,9 +1,9 @@
 .top-section {
   min-height: 100vh;
   padding: 25px 0;
-  @include gradient-bg-img($path: '../../images/bg-top.jpg');
+  @include gradient-bg-img($path: '../images/bg-top.jpg');
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    @include gradient-bg-img($path: '../../images/bg-top@2x.jpg');
+    @include gradient-bg-img($path: '../images/bg-top@2x.jpg');
   }
 }
