@@ -1,0 +1,17 @@
+$font-first: 'Montserrat', sans-serif;
+$font-second: 'Roboto', sans-serif;
+$font-third: 'Kaushan Script', cursive;
+$font-size-default: 14px;
+
+$color: (
+  color_white: #fff,
+  color_border: #e7e7e7,
+  text_light: #ccc,
+  text_normal: #999,
+  text_darker: #333,
+  like_menu: #95e1d3,
+  after_line: #f38181,
+  bg_icon: #fce38a,
+  gradient_overlay:
+    linear-gradient(rgba(243, 129, 129, 0.9) 0%, rgba(252, 227, 138, 0.9) 100%),
+);

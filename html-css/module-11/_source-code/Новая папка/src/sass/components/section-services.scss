@@ -1,0 +1,16 @@
+.services {
+  @extend %section-padding;
+}
+
+.services__title {
+  @extend %title-style;
+
+  &::after {
+    @include pseudo;
+    @extend %title-line;
+  }
+}
+
+.services__sub-title {
+  @extend %title-sub;
+}

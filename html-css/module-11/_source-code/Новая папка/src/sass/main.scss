@@ -1,0 +1,32 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import './normalize.scss';
+@import './fonts.scss';
+@import './helpers/variables.scss';
+@import './helpers/hidding.scss';
+@import './helpers/placeholder.scss';
+@import './helpers/mixin.scss';
+@import './base.scss';
+@import './components/container.scss';
+
+// TOP SECTION with HEADER
+@import './components/top-section.scss';
+@import './components/page-header.scss';
+@import './components/navigation.scss';
+@import './components/top-title-block.scss';
+
+//SECTION SERVICES
+@import './components/section-services.scss';
+@import './components/services-list.scss';
+@import './components/services-card.scss';
+
+//SECTION TEAM
+@import './components/section-team.scss';
+@import './components/members-list.scss';
+@import './components/member-card.scss';
+
+//FOOTER
+@import './components/footer__inner.scss';
+@import './components/footer__form.scss';

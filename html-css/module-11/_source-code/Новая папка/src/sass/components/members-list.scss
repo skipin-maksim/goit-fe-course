@@ -1,0 +1,4 @@
+.members-list {
+  @include content-between-flex($type: 'hor');
+  align-items: flex-start;
+}

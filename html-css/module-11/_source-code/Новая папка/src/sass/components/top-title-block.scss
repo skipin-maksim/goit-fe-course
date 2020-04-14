@@ -1,0 +1,33 @@
+.top-title-block {
+  color: map-get($color, color_white);
+}
+.top-title-block__title {
+  margin-top: 138px;
+  margin-bottom: 115px;
+  font-size: 150px;
+  text-transform: uppercase;
+  line-height: 140px;
+}
+.top-title-block__sub-title {
+  display: block;
+  font-family: $font-third;
+  text-transform: initial;
+  font-size: 72px;
+}
+.top-title-block__btn {
+  @extend %link;
+  @include transition;
+  padding: 9px 27px;
+  min-width: 160px;
+  font-size: $font-size-default;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid map-get($color, color_white);
+  color: map-get($color, color_white);
+
+  &:hover,
+  &:focus {
+    border: 3px solid map-get($color, after_line);
+    color: map-get($color, after_line);
+  }
+}

@@ -1,0 +1,56 @@
+.navigation__list {
+    @include content-between-flex('all');
+    width: 625px;
+}
+
+.navigation__item {
+    @extend %list-item;
+}
+
+.navigation__link {
+    @extend %link;
+    @include transition;
+    position: relative;
+    font-size: $font-size-default;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: map-get($color, color_white);
+    
+    &::after {
+        @include pseudo;
+        @include transition;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+    }
+    
+    &:hover,
+    &:focus {
+        color: map-get($color, bg_icon);
+    }
+    
+    &:hover::after,
+    &:focus::after {
+        bottom: -10px;
+        background-color: map-get($color,  bg_icon);
+    }
+
+    &--icon {
+       @extend %link;
+    }
+
+    &--icon:focus .navigation__icon,
+    &--icon:hover .navigation__icon {
+        fill: map-get($color, bg_icon);
+    }
+
+}
+
+.navigation__icon {
+    width: 20px;
+    height: 20px;
+    fill: map-get($color, color_white);
+    transition: all .2s linear;
+}

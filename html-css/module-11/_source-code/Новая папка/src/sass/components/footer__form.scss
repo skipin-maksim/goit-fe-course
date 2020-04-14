@@ -1,0 +1,36 @@
+.form__one-block {
+  display: flex;
+}
+
+.form__email {
+  width: 229px;
+  height: 40px;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid map-get($color, color_border);
+  border-right: none;
+
+  &::placeholder {
+    @extend %light-text;
+    @extend %light-text-ital;
+  }
+}
+.form__btn-sub {
+  @extend %link;
+  @include transition;
+  min-width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  color: map-get($color, color_white);
+  background-color: map-get($color, like_menu);
+  cursor: pointer;
+  
+  &:hover,
+  &:focus {
+    background-color: map-get($color, bg_icon);
+    color: map-get($color, text_darker);
+  }
+}

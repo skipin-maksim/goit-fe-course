@@ -1,0 +1,57 @@
+.services-list__item {
+  @extend %list-item;
+}
+
+.services-card {
+  position: relative;
+  padding: 18px;
+  padding-left: 80px;
+  width: 380px;
+  min-height: 150px;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 20px;
+  }
+
+  &::after {
+    @include pseudo;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &--photography::after {
+    @include bg-img($path: "../images/icons/icon-color/icon-alarm.svg", $size: contain);
+  }
+
+  &--web-design::after {
+    @include bg-img($path: "../images/icons/icon-color/icon-line_graph.svg", $size: contain);
+  }
+
+  &--creativity::after {
+    @include bg-img($path: "../images/icons/icon-color/icon-pc.svg", $size: contain);
+  }
+
+  &--seo::after {
+    @include bg-img($path: "../images/icons/icon-color/icon-book.svg", $size: contain);
+  }
+
+  &--css-html::after {
+    @include bg-img($path: "../images/icons/icon-color/icon-home.svg", $size: contain);
+  }
+
+  &--digital::after {
+    @include bg-img($path: "../images/icons/icon-color/icon-img.svg", $size: contain);
+  }
+}
+
+.services-card__title {
+  @extend %mid-title-style;
+  margin-bottom: 10px;
+}
+
+.services-card__text {
+  @extend %light-text;
+}

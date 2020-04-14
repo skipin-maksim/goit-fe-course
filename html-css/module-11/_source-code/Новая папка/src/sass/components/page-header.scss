@@ -1,0 +1,26 @@
+.page-header {
+    @include content-between-flex('all');
+}
+
+.page-header__title {
+    margin: 0;
+}
+
+.page-header__logo-link {
+    @extend %link;
+    @include transition;
+    font-size: 30px;
+    font-weight: 700;
+    color: map-get($color, color_white);
+    
+    &:hover,
+    &:focus {
+        color: map-get($color, bg_icon);
+    }
+}
+
+.page-header__title-block {
+    margin: 0 auto;
+    max-width: 830px;
+    text-align: center;
+}
