@@ -41,9 +41,6 @@ const addLogin = (allLogins, login) => {
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-console.log(addLogin(logins, '555g')); // 'Логин успешно добавлен!'
-console.log(addLogin(logins, 'Ajax22')); // 'Логин успешно добавлен!'
-console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
 console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
 console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
 console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
