@@ -1,4 +1,4 @@
-const logins = ['Mango', 'robotGoogles'];
+const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
 const isLoginValid = function(login) {
   let validNewLogin = true;
