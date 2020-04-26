@@ -1,6 +1,6 @@
 const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
 
-const isLoginValid = function(login) {
+const isLoginValid = login => {
   let validNewLogin = true;
 
   if (login.length < 4 || login.length > 16) {
@@ -10,41 +10,40 @@ const isLoginValid = function(login) {
   return validNewLogin;
 };
 
-const isLoginUnique = function(allLogins, login) {
-  let newLoginUnique = true;
+const isLoginUnique = (allLogins, login) => {
+  let newLoginUnique = false;
 
-  for (let i = 0; i < allLogins.length; i += 1) {
-    if (allLogins[i] === login) {
-      newLoginUnique = false;
-    }
+  if (allLogins.includes(login) === false) {
+    newLoginUnique = true;
   }
 
   return newLoginUnique;
 };
 
-const addLogin = function(allLogins, login) {
-  let newLogin;
-
+const addLogin = (allLogins, login) => {
   if (isLoginValid(login) === false) {
-    newLogin = 'Ошибка! Логин должен быть от 4 до 16 символов';
-  } else if (isLoginUnique(allLogins, login) === false) {
-    newLogin = 'Такой логин уже используется!';
-  } else {
-    for (let i = 0; i < allLogins.length; i += 1) {
-      if (login !== allLogins[i]) {
-        allLogins.push(login);
-        console.log(allLogins);
-        newLogin = 'Логин успешно добавлен!';
-      }
-    }
+    return 'Ошибка! Логин должен быть от 4 до 16 символов';
   }
 
-  return newLogin;
+  if (isLoginUnique(allLogins, login) === false) {
+    return 'Такой логин уже используется!';
+  }
+
+  if (
+    isLoginValid(login) === true &&
+    isLoginUnique(allLogins, login) === true
+  ) {
+    allLogins.push(login);
+  }
+  return 'Логин успешно добавлен!';
 };
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
+console.log(addLogin(logins, '555g')); // 'Логин успешно добавлен!'
+console.log(addLogin(logins, 'Ajax22')); // 'Логин успешно добавлен!'
+console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
 console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
 console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
 console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
