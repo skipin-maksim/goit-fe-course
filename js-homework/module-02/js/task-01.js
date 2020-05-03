@@ -1,11 +1,16 @@
-const logItems = array => {
-  for (let i = 0; i < array.length; i += 1) {
-    console.log(`${[i + 1]} - ${array[i]} `);
-  }
+const user = {
+  name: 'Mango',
+  age: 20,
+  hobby: 'html',
+  premium: true,
 };
 
-console.log('Первое обращение к функции');
-logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
+user.mod = 'happy';
+user.hobby = 'skydiving';
+user.premium = false;
 
-console.log('Второе обращение к функции');
-logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
+const userKeys = Object.keys(user);
+
+for (const key of userKeys) {
+  console.log(`${key} : ${user[key]}`);
+}
