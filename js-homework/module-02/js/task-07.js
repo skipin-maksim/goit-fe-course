@@ -11,10 +11,12 @@ const Transaction = {
   WITHDRAW: 'withdraw',
 };
 
+const couter = 0;
+
 /*
  * Каждая транзакция это объект со свойствами: id, type и amount
  */
-let couter = 0;
+let counter = 0;
 const account = {
   // Текущий баланс счета
   balance: 0,
@@ -23,14 +25,20 @@ const account = {
   transactions: [],
 
   /*
+   * Функция генерации ID
+   */
+  addId() {
+    return (counter += 1);
+  },
+
+  /*
    * Метод создает и возвращает объект транзакции.
    * Принимает сумму и тип транзакции.
    */
   createTransaction(amount, type) {
     const result = {};
 
-    // result.id = `f${(~~(Math.random() * 1e8)).toString(16)}`;
-    result.id = 1;
+    result.id = this.addId();
     result.type = type;
     result.sum = amount;
 
@@ -50,7 +58,7 @@ const account = {
 
     this.createTransaction(amount, Transaction.DEPOSIT);
 
-    return `На ваш счет зачисленно: ${amount} $`;
+    return `На ваш счет зачисленно: +${amount}$`;
   },
 
   /*
@@ -64,13 +72,13 @@ const account = {
    */
   withdraw(amount) {
     if (amount > this.balance) {
-      return `Снятие ${amount} $ не возможно, недостаточно средств. На вашем счету: ${this.balance}`;
+      return `Снятие ${amount}$ не возможно, недостаточно средств. На вашем счету: ${this.balance}$`;
     }
 
     this.balance -= amount;
     this.createTransaction(amount, Transaction.WITHDRAW);
 
-    return `С вашего счета списано: -${amount} $`;
+    return `С вашего счета списано: -${amount}$`;
   },
 
   /*
@@ -83,7 +91,13 @@ const account = {
   /*
    * Метод ищет и возвращает объект транзации по id
    */
-  // getTransactionDetails(id) {},
+  getTransactionDetails(id) {
+    for (const idItem of this.transactions) {
+      if (id === idItem.id) {
+        return `Операция под идентификатором ${id}, имеет тип ${idItem.type} и сумму ${idItem.sum}$`;
+      }
+    }
+  },
 
   /*
    * Метод возвращает количество средств
@@ -98,25 +112,27 @@ const account = {
       }
     }
 
-    return `Общая сумма транзакций ${type} равна: ${tottalCash}`;
+    return `Общая сумма транзакций ${type} равна: ${tottalCash}$`;
   },
 };
 
 //* Кладем деньги на баланс
 console.log(account.deposit(100));
 console.log(account.deposit(200));
-console.log(account.deposit(100));
+console.log(account.deposit(300));
+console.log(account.deposit(60));
+console.log(account.deposit(40));
 
 //* Снимаем деньги с баланса
 console.log(account.withdraw(150));
 console.log(account.withdraw(50));
 
 //* Пытаемся снять сумму больше чем на балансе
-console.log(account.withdraw(250));
+console.log(account.withdraw(2500));
 
 //* Проверяем баланс
-console.log(`Текущий баланс вашего счета: ${account.balance} $`);
-console.log(account.transactions);
+console.log(`Текущий баланс вашего счета: ${account.balance}$`);
+console.table(account.transactions);
 
 //* Kоличество средств определенного типа транзакции
 //* Вариант 1
@@ -126,3 +142,6 @@ console.log(account.getTransactionTotal('withdraw'));
 //* Вариант 2
 // console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 // console.log(account.getTransactionTotal(Transaction.WITHDRAW));
+
+console.log(account.getTransactionDetails(5));
+console.log(account.getTransactionDetails(7));
