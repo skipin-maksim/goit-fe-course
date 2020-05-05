@@ -1,10 +1,30 @@
-const countProps = obj => Object.keys(obj).length;
+const calculateEngravingPrice = function(message, pricePerWord) {
+  const arrMessage = message.split(' ');
+  const totalPrice = `Цена за текст из ${
+    arrMessage.length
+  } слов, составит ${arrMessage.length * pricePerWord} кредиов`;
 
-/*
- * Вызовы функции для проверки работоспособности твоей реализации.
- */
-console.log(countProps({})); // 0
+  return totalPrice;
+};
 
-console.log(countProps({ name: 'Mango', age: 2 })); // 2
+console.log(
+  calculateEngravingPrice(
+    'Proin sociis natoque et magnis parturient montes mus',
+    10,
+  ),
+); // 80
 
-console.log(countProps({ mail: 'poly@mail.com', isOnline: true, score: 500 })); // 3
+console.log(
+  calculateEngravingPrice(
+    'Proin sociis natoque et magnis parturient montes mus',
+    20,
+  ),
+); // 160
+
+console.log(
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 40),
+); // 240
+
+console.log(
+  calculateEngravingPrice('Donec orci lectus aliquam est magnis', 20),
+); // 120
