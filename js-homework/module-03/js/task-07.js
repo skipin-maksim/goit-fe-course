@@ -28,7 +28,9 @@ const account = {
    * Функция генерации ID
    */
   addId() {
-    return (counter += 1);
+    counter += 1;
+
+    return counter;
   },
 
   /*
@@ -42,8 +44,6 @@ const account = {
     result.type = type;
     result.sum = amount;
 
-    this.transactions.push(result);
-
     return result;
   },
 
@@ -56,7 +56,7 @@ const account = {
   deposit(amount) {
     this.balance += amount;
 
-    this.createTransaction(amount, Transaction.DEPOSIT);
+    this.transactions.push(this.createTransaction(amount, Transaction.DEPOSIT));
 
     return `На ваш счет зачисленно: +${amount}$`;
   },
@@ -77,6 +77,10 @@ const account = {
 
     this.balance -= amount;
     this.createTransaction(amount, Transaction.WITHDRAW);
+
+    this.transactions.push(
+      this.createTransaction(amount, Transaction.WITHDRAW),
+    );
 
     return `С вашего счета списано: -${amount}$`;
   },
