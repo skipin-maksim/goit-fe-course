@@ -31,8 +31,10 @@ class Car {
   }
 
   accelerate(value) {
-    if (this.maxSpeed >= value && this.isOn) {
+    if (this.speed + value <= this.maxSpeed && this.isOn) {
       this.speed += value;
+    } else if (this.speed + value >= this.maxSpeed && this.isOn) {
+      this.speed = this.maxSpeed;
     }
   }
 
