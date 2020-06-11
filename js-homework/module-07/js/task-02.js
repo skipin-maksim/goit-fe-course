@@ -7,19 +7,7 @@ const ingredients = [
   'Приправы',
 ];
 
-const listIngredients = document.querySelector('#ingredients');
-
-// const addIngredients = (arr, parentElem) => {
-//   arr.forEach(elem => {
-//     const listItem = document.createElement('li');
-//     listItem.textContent = elem;
-
-//     return parentElem.appendChild(listItem);
-//   });
-// };
-
-// addIngredients(ingredients, listIngredients);
-// console.log(listIngredients);
+const listIngredientsRef = document.querySelector('#ingredients');
 
 const createListItem = arr => {
   const itemArrey = arr.map(elem => {
@@ -38,4 +26,4 @@ const addToList = (list, arr) => {
   return list.append(...arrItems);
 };
 
-addToList(listIngredients, ingredients);
+addToList(listIngredientsRef, ingredients);

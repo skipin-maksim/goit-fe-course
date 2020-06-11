@@ -1,6 +1,6 @@
 // *---------------------------------------------------------------
-const itemsInCategories = document.querySelectorAll('.item');
-console.log(`В списке ${itemsInCategories.length} категории`);
+const itemsInCategoriesRef = document.querySelectorAll('.item');
+console.log(`В списке ${itemsInCategoriesRef.length} категории`);
 // *---------------------------------------------------------------
 
 const categoryQuantity = items1 => {
@@ -14,4 +14,4 @@ const categoryQuantity = items1 => {
   });
 };
 
-categoryQuantity(itemsInCategories);
+categoryQuantity(itemsInCategoriesRef);

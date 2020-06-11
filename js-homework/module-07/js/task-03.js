@@ -16,19 +16,22 @@ const images = [
   },
 ];
 
-const listGallery = document.querySelector('#gallery');
+const listGalleryRef = document.querySelector('#gallery');
 
 // ! create <li> </li>
 const createListItem = () => {
-  const listItem = document.createElement('li');
+  const listItemRef = document.createElement('li');
 
-  return listItem;
+  return listItemRef;
 };
 
 // ! create one <li> <img> </li>
 const createImgItem = (url, alt) => {
   const item = createListItem();
-  item.insertAdjacentHTML('afterbegin', `<img src="${url}" alt="${alt}">`);
+  item.insertAdjacentHTML(
+    'afterbegin',
+    `<img src="${url}" class="gallery__img" alt="${alt}">`,
+  );
 
   return item;
 };
@@ -44,15 +47,4 @@ const addListToGallery = (list, items) => {
 };
 
 // ! -- run fn --
-addListToGallery(listGallery, images);
-
-// * ------------------- add class name for <img> ---------------------------
-const getImg = document.querySelectorAll('img');
-const addImgClassName = arr => {
-  return arr.forEach(e => {
-    e.className = 'gallery__img';
-  });
-};
-
-addImgClassName(getImg);
-// * ------------------------------------------------------------------------
+addListToGallery(listGalleryRef, images);

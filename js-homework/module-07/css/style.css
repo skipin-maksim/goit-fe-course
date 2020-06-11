@@ -10,3 +10,24 @@
   width: auto;
   height: 150px;
 }
+
+#name-input {
+  margin-top: 50px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+#font-size-control {
+  display: block;
+  margin-top: 50px;
+}
