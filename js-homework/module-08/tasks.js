@@ -64,9 +64,6 @@ function openModal(event) {
     }
   });
 
-  //! -------------------------------------------- влево вправо
-  window.addEventListener('keydown', event => {});
-
   if (event.target !== refs.galleryList) {
     refs.jsLightbox.classList.add('is-open');
 
@@ -84,5 +81,3 @@ function closeModal(event) {
     refs.lightboxImg.src = '';
   }
 }
-
-//-------------------------------------------------------
