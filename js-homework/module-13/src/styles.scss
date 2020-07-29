@@ -22,10 +22,64 @@ body {
   background-image: url('./images/bg-pattern.png');
 }
 
+.dev {
+  font-size: 22px;
+  color: rgb(141, 141, 141);
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
 }
+
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 560px) {
+    flex-direction: column;
+  }
+}
+
+.btn-favorites {
+  min-width: 90px;
+  min-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 10px;
+  min-height: 40px;
+  min-width: 125px;
+  text-align: left;
+  font-family: 'Kalam', cursive;
+  background-color: #282c35;
+  border: 3px solid transparent;
+  color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s linear;
+
+  &:hover {
+    border: 3px solid rgb(165, 168, 116);
+    border-radius: 5px;
+    background-color: rgb(90, 88, 84);
+    color: rgb(255, 251, 233);
+  }
+
+  @media screen and (max-width: 560px) {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+// .material-icons {
+//   margin: 0;
+// }
 
 .input {
   width: 50%;
@@ -47,6 +101,10 @@ img {
   height: 200px;
   display: block;
   object-fit: cover;
+
+  @media screen and (max-width: 360px) {
+    width: 280px;
+  }
 }
 
 .gallery {
@@ -61,6 +119,7 @@ img {
 .card {
   padding: 10px;
   width: 320px;
+  max-height: 294px;
   background-color: rgba(196, 192, 192, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: ease-out 0.3s all;
@@ -74,6 +133,10 @@ img {
     background-color: rgb(90, 88, 84);
     .stats-item {
       color: rgb(255, 251, 233);
+
+      &:hover {
+        color: rgb(201, 171, 0);
+      }
     }
   }
 
@@ -87,6 +150,10 @@ img {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 300px;
   }
 }
 
@@ -145,6 +212,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 .checkbox {
@@ -198,4 +266,8 @@ img {
 
 .disabled {
   display: none;
+}
+
+.like {
+  color: #c9ab00;
 }
