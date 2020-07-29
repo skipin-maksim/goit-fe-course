@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Module-13</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="intro">
+      <button class="btn-favorites">
+        Favorites
+        <span class="material-icons" style="margin: 0;">
+          star_outline
+        </span>
+        <span class="quantity-likes">0</span>
+      </button>
+
+      <h1 class="dev">
+        By Aleksey Grygorenko <br />
+        & Maksim Skipin
+      </h1>
+    </div>
+
+    <form class="search-form" id="search-form">
+      <input
+        class="input"
+        type="text"
+        name="query"
+        autocomplete="off"
+        placeholder="Search images..."
+        autofocus
+      />
+    </form>
+
+    <div class="container">
+      <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+      </ul>
+
+      <div class="button-box disabled">
+        <label class="checkbox" for="scroll-loader">
+          <span>Auto-loading by scrolling</span>
+          <input type="checkbox" name="scroll-loader" id="scroll-loader" />
+        </label>
+
+        <button class="btn-more" type="button">
+          <span>Load More...</span>
+          <div class="loader disabled">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- <ul class="pagination-count"></ul> -->
+  </body>
+</html>
